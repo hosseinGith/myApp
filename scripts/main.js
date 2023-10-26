@@ -20,7 +20,7 @@ function createElements(arr) {
   });
 }
 async function getJsonContent() {
-  json = await fetch("http://127.0.0.1:5500/scripts/products.json");
+  json = await fetch("https://food1402.netlify.app/scripts/products.json");
   resp = await json.json();
 }
 async function showJsonContent() {
