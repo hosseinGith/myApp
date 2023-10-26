@@ -13,7 +13,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 20px;
   background-color: #ddd;
+}
+.refreshBtn {
+  font-size: 20px;
 }
 .container {
   max-height: 500px;

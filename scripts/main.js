@@ -1,7 +1,9 @@
+const refreshBtn = document.querySelector(".refreshBtn");
 const container = document.querySelector(".container");
 let json, resp;
 
 function createElements(arr) {
+  container.textContent = "";
   arr.forEach((item) => {
     let div = document.createElement("div");
     let p = document.createElement("p");
@@ -28,3 +30,4 @@ async function showJsonContent() {
   createElements(resp);
 }
 showJsonContent();
+refreshBtn.addEventListener("click", showJsonContent);
