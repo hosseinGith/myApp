@@ -13,9 +13,9 @@ function createElements(arr) {
     p.textContent = item.name;
     p2.textContent = item.isHave ? "هست" : "نیست";
     span.textContent = "=";
-    div.appendChild(p);
-    div.appendChild(span);
     div.appendChild(p2);
+    div.appendChild(span);
+    div.appendChild(p);
     container.appendChild(div);
   });
 }
